@@ -560,6 +560,13 @@ declare global {
 
   type ConnectorEndpoint = ConnectorEndpointPosition | ConnectorEndpointEndpointNodeIdAndMagnet | ConnectorEndpointPositionAndEndpointNodeId
 
+  type ConnectorStrokeCap =
+    | "NONE"
+    | "ARROW_EQUILATERAL"
+    | "ARROW_LINES"
+    | "TRIANGLE_FILLED"
+    | "DIAMOND_FILLED";
+
   ////////////////////////////////////////////////////////////////////////////////
   // Mixins
 
@@ -991,6 +998,8 @@ declare global {
     connectorLineType: 'ELBOWED' | 'STRAIGHT'
     connectorStart: ConnectorEndpoint
     connectorEnd: ConnectorEndpoint
+    startStrokeCap: ConnectorStrokeCap
+    endStrokeCap: ConnectorStrokeCap
   }
 
   type BaseNode =
