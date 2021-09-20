@@ -998,8 +998,8 @@ declare global {
     connectorLineType: 'ELBOWED' | 'STRAIGHT'
     connectorStart: ConnectorEndpoint
     connectorEnd: ConnectorEndpoint
-    startStrokeCap: ConnectorStrokeCap
-    endStrokeCap: ConnectorStrokeCap
+    connectorStartStrokeCap: ConnectorStrokeCap
+    connectorEndStrokeCap: ConnectorStrokeCap
   }
 
   type BaseNode =
